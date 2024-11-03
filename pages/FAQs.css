@@ -1,0 +1,113 @@
+* {
+    margin: 0px; padding:0px;
+    box-sizing: border-box;
+    font-family: "EXO", sans-serif;
+}
+
+/* faqs section */
+section {
+    padding: 70px 70px 0px 70px;
+    h1 {
+        font-size: 36px;
+        color: #000000;
+        font-weight: 600;
+        padding-bottom: 24px;
+    }
+
+    .faq-colum {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 38px;
+
+        .faq-rows {
+            width: 50%;
+        }
+    }
+    .FAQ {
+        padding: 15px;
+        height: 64px;
+        width: 100%;
+        background-color: #F5F5F5;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        border: none;
+        border-radius: 8px;
+        h2 {
+            font-size: 14px;
+            color: #000000;
+            font-weight: 600;
+        }
+    }
+    .FAQ-des {
+        padding: 15px;
+        width: 100%;
+        background-color: #F5F5F5;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        border: none;
+        border-radius: 8px;
+    }
+
+    h2 {
+        color: #FF782D;
+        padding-bottom: 10px;
+    }
+
+    p {
+        font-size: 12px;
+        color: #555555;
+    }
+
+}
+
+.vector {
+max-width: 400px;
+height: 250px;
+text-align: start;
+}
+
+/* footer */
+footer {
+    background-color: #F5F5F5;
+    padding: 0px 70px 40px 70px;
+
+
+    .menues {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px
+        }
+        a {
+            text-decoration: none;
+            color: #555555;
+            font-size: 12px;
+        }
+        a:hover {
+            color: #FF782D;
+    }
+   
+ }
+
+
+@media screen and (max-width : 992px) {
+    .faq-colum {
+        display: flex;
+        flex-direction: column;
+        .faq-rows {
+            min-width: 100%;
+        }
+}
+footer .menues {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+   
+}
+
+}

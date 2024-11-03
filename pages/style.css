@@ -1,0 +1,527 @@
+* {
+    margin: 0px; padding:0px;
+    box-sizing: border-box;
+    font-family: "EXO", sans-serif;
+}
+
+nav {
+    height: 72px;
+    max-width: 1366px;
+    padding: 0px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+
+    ul {
+        height: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+    }
+
+    li {
+        width: max-content;
+        height: 100%;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 0px 10px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+
+    }
+
+    li:active {
+        background-color: #F5F5F5;
+        a {
+            color: #FF782D;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+
+    .log-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            color: black;
+        }
+        p {
+            padding: 0px 3px;
+            font-size: 16px;
+            font-weight: 600;
+            color: black;
+        }
+
+        .icon-search {
+            font-size: 20px;
+            background: none;
+            border: none;
+        }
+    }
+
+    .bars {
+        display: none;
+        background: none;
+        border: none;
+    }
+}
+
+.hero {
+    padding: 0px 70px;
+    height: calc(100vh - 72px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../assets/bg.png);
+    background-size: cover;
+    position: relative;
+
+    .hero-text {
+        z-index: 2;
+    }
+
+    h1 {
+        max-width: 500px;
+        font-size: 48px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        
+    }
+
+    
+
+    p {
+        max-width: 520px;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        background-color: #FF782D;
+        padding: 10px 24px;
+        border: none;
+        border-radius: 24px;
+        color: #fff;
+    }
+
+  
+    .girl {
+        z-index: 2;
+    }
+
+    .online-courses {
+        position: absolute;
+        right: 30px;
+        bottom: 7px;
+        z-index: 1;
+    }
+}
+
+.categories-cards {
+        width: 100%;
+        padding: 50px 70px;
+        .categories-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        button {
+            border: solid 2px #9D9D9D;
+            padding: 10px 24px;
+            border-radius: 24px;
+            background: none;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        h1 {
+            max-width: 300px;
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 38px;
+        }
+
+        .text1 {
+            font-size: 18px;
+            max-width: 300px;
+        }
+
+    }
+
+    .cg-cards {
+        padding: 50px 40px;
+        max-width: 1226px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .categories-card {
+            width: 234px;
+            height: 234px;
+            border: solid 1px #EAEAEA;
+            border-radius: 20px;
+            margin-left: 30px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            transition: 0.7s ease;
+        }
+
+        .categories-card:hover {
+            transform: scale(1.1);
+            
+        }
+
+    
+    }
+    .cg-button {
+        display: none;
+        border: solid 2px #9D9D9D;
+        padding: 10px 24px;
+        border-radius: 24px;
+        background: none;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+.Featured-courses {
+     padding: 50px 70px;
+        .Featured-courses-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        button {
+            display: block ; 
+            border: solid 2px #9D9D9D;
+            padding: 10px 24px;
+            border-radius: 24px;
+            background: none;
+            font-size: 18px;
+            font-weight: 500;
+            
+        }
+
+        h1 {
+            max-width: 300px;
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 38px;
+        }
+
+        .p {
+            font-size: 18px;
+            max-width: 300px;
+        }
+    }
+
+    .Featured-courses-cards {
+        padding-top: 50px;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-wrap:wrap;
+        gap: 25px;
+
+        .Featured-courses-card {
+            border: solid #EAEAEA 1px;
+            border-radius: 20px;
+            max-width: 385px;
+            position: relative;
+
+            .with-BG {
+                color: #fff;
+                background-color: black;
+                border-radius: 8px;
+                padding: 8px 12px;
+                position: absolute;
+                bottom: 380px;
+                left : 25px;
+            }
+
+           
+        }
+    }
+
+}
+
+/* add-ons-section */
+
+.add-ons {
+    background-image: url(./assets/banner1.png);
+    background-size: cover;
+    margin: 0px 70px;
+    margin-bottom: 70px;
+    padding: 55px 50px;
+    border: none;
+    border-radius: 20px;
+
+    p {
+      font-size: 16px;
+      font-weight: 600;
+      color: #555555;
+      padding-bottom: 12px;
+    }
+
+    h2 {
+        font-size: 32px;
+        font-weight: 600;
+        color: black;
+        padding-bottom: 12px;
+    }
+
+    .add-ons-des {
+        width: 450px;
+        text-wrap: wrap;
+        font-size: 18px;
+        font-weight: 400;
+        color: #555555;
+    } 
+
+    button {
+        padding: 10px 24px;
+        background-color: #FF782D;
+        border: none;
+        border-radius: 24px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+/* numbers section */
+.numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    flex-wrap: wrap;
+    .numbers-card {
+        background-color: #F5F5F5;
+        border: none;
+        border-radius: 20px;
+        width: 284px;
+        padding: 40px 40px;
+        margin-bottom: 70px;
+        h2 {
+            font-size: 32px;
+            font-weight: 600;
+            color: #FF782D;
+            padding-bottom: 22px;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 500;
+
+        }
+
+        
+    }
+}
+
+/* vector section */
+
+.vector {
+    display: flex;
+    justify-content: center;
+    gap: 125px;
+    padding: 50px 70px;
+
+    .vector-des {
+        max-width: 520px;
+
+        h2 {
+            font-size: 32px;
+            font-weight: 600;
+            padding-bottom: 24px;
+        }
+        p {
+            font-size: 18px;
+            padding-bottom: 16px;
+        }
+
+        ul {
+            list-style: url(./assets/Component\ 2.svg);
+            padding-bottom: 20px;
+            padding-left: 20px;
+
+            li {
+                font-size: 18px;
+                padding-bottom: 12px;
+            }
+        }
+        button {
+            padding: 10px 24px;
+            background-color: #FF782D;
+            border: none;
+            border-radius: 24px;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+
+}
+
+
+/* footer */
+ footer {
+    background-color: #F5F5F5;
+    padding: 0px 70px 40px 70px;
+
+
+    .menues {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px
+        }
+        a {
+            text-decoration: none;
+            color: #555555;
+            font-size: 12px;
+        }
+        a:hover {
+            color: #FF782D;
+    }
+   
+ }
+
+@media screen and (max-width : 992px) {
+
+
+    nav , .hero {
+        padding: 0px 20px;
+    }
+
+    nav ul , nav .log-link {
+        display: none;
+}
+
+    nav .bars {
+        display: block;
+    }
+
+    .hero {
+        justify-content: center;
+        text-align: center;
+    
+    
+        .girl , .online-courses {
+            display: none;
+        }
+    } 
+            
+    .categories-cards {
+        
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        button {
+            display: none;
+        }
+        .cg-button {
+            display: block;
+            margin-left: 35px;
+        }
+
+    }
+            .categories-text {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+
+                h1 , .text1{
+                    text-align: center;
+                }
+
+        }
+     
+        .Featured-courses .Featured-courses-content { 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            button {
+                display: none;
+            }
+            
+        
+    }
+
+    .Featured-courses-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 25px;
+
+        
+
+    }
+
+    .add-ons {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 70px;
+        border-radius: 0px;
+
+    }
+
+    .vector {
+        display: flex;
+        gap: 30PX;
+        flex-direction: column-reverse;
+        column-re
+        padding: 50px 20px;
+    }
+    .students {
+        display: flex;
+        flex-direction: column;
+        .students-icon {
+            padding-right: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .buttons-students {
+            display: flex;
+            flex-direction: column;
+            padding-left: 0px ;
+        }
+    }
+
+    footer .menues {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    
+  
+} 
+
